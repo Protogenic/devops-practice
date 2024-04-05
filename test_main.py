@@ -1,5 +1,5 @@
 import unittest
-from main import add
+from main import add, divide
 
 class TestMain(unittest.TestCase):
 
@@ -18,6 +18,11 @@ class TestMain(unittest.TestCase):
     def test_add5(self):
         self.assertEqual(add(2.5, 3.5), 6)
 
+    def test_divide1(self):
+        self.assertEqual(divide(10, 2), 5)
+
+    def test_divide2(self):
+        self.assertEqual(divide(-10, 2), -5)
         
 if __name__ == '__main__':
     unittest.main()

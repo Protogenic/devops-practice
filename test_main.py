@@ -1,5 +1,5 @@
 import unittest
-from main import add
+from main import add, divide
 
 class TestMain(unittest.TestCase):
 

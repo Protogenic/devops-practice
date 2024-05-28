@@ -27,6 +27,4 @@ jobs:
         docker build -t protogenic/devops:pr-${{ github.event.number }} .
         docker push protogenic/devops:pr-${{ github.event.number }}
 
-    - name: Deploy to server
-      run: |
-        ssh user@server "docker pull protogenic/devops:pr-${{ github.event.number }} && docker run -d -p 8000:8000 protogenic/devops:pr-${{ github.event.number }}"
+  

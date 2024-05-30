@@ -28,4 +28,4 @@ jobs:
 
     - name: Build application
       run: |
-        python setup.py build
+        python main.py build
